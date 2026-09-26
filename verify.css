@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: #F8F8F8;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px 15px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-area {
+    width: 40px;
+    height: 40px;
+
+ margin: 22px  20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   VERIFICATION CARD
+========================= */
+
+.verification-card {
+    width: 100%;
+    max-width: 400px;
+
+    background: #FFFFFF;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+.verification-card h1 {
+    margin-bottom: 12px;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #111827;
+}
+
+
+.verification-card p {
+    margin-bottom: 22px;
+
+    font-size: 14px;
+
+    color: #555555;
+}
+
+
+/* =========================
+   CODE INPUT
+========================= */
+
+#verificationCode {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 12px;
+
+    border: 1px solid #CCCCCC;
+
+    border-radius: 7px;
+
+    background: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    letter-spacing: 3px;
+
+    outline: none;
+}
+
+
+#verificationCode:focus {
+    border-color: #0B2A4A;
+}
+
+
+/* =========================
+   VERIFY BUTTON
+========================= */
+
+.verification-card button {
+    width: 100%;
+
+    height: 44px;
+
+    margin-top: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1236bd;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.verification-card button:hover {
+    background: #1236bd;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 14px;
+    }
+
+    .verification-card {
+        padding: 27px 20px;
+    }
+.forgot-link {
+        font-size: 12.5px;
+    }
+
+    footer {
+        margin-top: 26px;
+    }
+
+    .footer-links a {
+        font-size: 10px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+/* =========================
+   FOOTER (WRAPPED MULTI-LINE)
+========================= */
+
+footer {
+    width: 100%;
+    max-width: 500px; /* Keeps the footer content neatly balanced */
+    text-align: center;
+    margin-top: 34px;
+    padding-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allows links to break into nice rows */
+    justify-content: center;
+    align-items: center;
+    gap: 6px 4px; /* Space between rows and items */
+    line-height: 1.6;
+}
+
+.footer-links a {
+    color: #1671c9;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents individual link titles from breaking in half */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links .divider {
+    color: #888;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+footer p {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #666;
+}

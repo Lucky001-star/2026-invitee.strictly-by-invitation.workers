@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f8f8;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Helvetica, Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 14px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-area {
+    width: 40px;
+    height: 40px;
+
+    margin: 22px  20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.login-card {
+    width: 100%;
+    max-width: 410px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    padding: 25px 25px 28px;
+
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+    text-align: center;
+
+    font-size: 27px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    margin-bottom: 23px;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 12px;
+
+    border: 1px solid #ccd1d5;
+    border-radius: 7px;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    margin-bottom: 16px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #1877f2;
+
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.08);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+    height: 46px;
+
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #1236bd;
+    color: white;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d2d52;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+.forgot-link {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #172b4d;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+
+    margin-top: 34px;
+
+    padding-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    line-height: 1.6;
+}
+
+.footer-links a {
+    color: #1671c9;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 16px;
+
+    font-size: 12px;
+
+    color: #333;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0 14px;
+    }
+
+    .logo-area {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .brand-logo {
+        width: 44px;
+        height: 44px;
+
+        font-size: 28px;
+    }
+
+    .login-card {
+        max-width: 360px;
+
+        padding: 23px 21px 26px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 21px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        height: 44px;
+        font-size: 14px;
+
+        margin-bottom: 15px;
+    }
+
+    button {
+        height: 44px;
+        font-size: 15px;
+    }
+
+    .forgot-link {
+        font-size: 13px;
+        margin-top: 16px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 0 12px;
+    }
+
+    .logo-area {
+        margin-top: 17px;
+        margin-bottom: 18px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+
+        font-size: 26px;
+    }
+
+    .login-card {
+        max-width: 340px;
+
+        padding: 21px 18px 23px;
+    }
+
+    h1 {
+        font-size: 23px;
+        margin-bottom: 19px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        height: 42px;
+        font-size: 14px;
+
+        margin-bottom: 13px;
+    }
+
+    button {
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .forgot-link {
+        font-size: 12.5px;
+    }
+
+    footer {
+        margin-top: 26px;
+    }
+
+    .footer-links a {
+        font-size: 10px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}

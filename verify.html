@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify your account</title>
+    <link rel="stylesheet" href="verify.css">
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+
+    <div class="logo-area">
+        <img src="images (5).avif" alt="Your Logo" class="brand-logo">
+    </div>
+
+    <main class="verification-card">
+        <h1>Verify your account</h1>
+        <p>Enter verification code</p>
+
+        <form id="verificationForm">
+            <input 
+                type="text" 
+                id="verificationCode"  
+                autocomplete="off" 
+                required
+            >
+
+            <button type="submit" id="verifyBtn">Verify</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Your Privacy Rights</a><span class="divider">|</span>
+            <a href="#">Consumer Privacy Rights</a><span class="divider">|</span>
+            <a href="#">Limit Use of Sensitive Personal Information</a><span class="divider">|</span>
+            <a href="#">Do Not Sell or Share My Personal Information</a><span class="divider">|</span>
+            <a href="#">Policies</a><span class="divider">|</span>
+            <a href="#">Contact Us</a><span class="divider">|</span>
+            <a href="#">Support</a>
+        </div>
+        <p>© 2026 Your Brand</p>
+    </footer>
+
+    <!-- Custom Verification Script -->
+    <script src="verify.js"></script>
+
+</body>
+
+</html>
